@@ -4,9 +4,7 @@ const Header = ({ children }) => {
     return (
         <header>
             <h1>Super Cool Header</h1>
-            <nav>
                 {children}
-            </nav>
         </header>
     )
 }

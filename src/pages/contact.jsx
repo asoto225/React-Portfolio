@@ -1,3 +1,5 @@
+import Footer from "../components/footer";
+
 export default function Contact() {
     return (
       <div>
@@ -15,6 +17,7 @@ export default function Contact() {
           conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
           rhoncus. Etiam vel condimentum magna, quis tempor nulla.
         </p>
+        <Footer />
       </div>
     );
   }

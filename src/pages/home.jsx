@@ -1,3 +1,5 @@
+import Footer from "../components/footer";
+
 export default function Home() {
     return (
         <div>
@@ -12,6 +14,7 @@ export default function Home() {
         porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
         vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
         fames ac ante ipsum primis in faucibus.</p>
+        <Footer />
         </div>
     );
 };

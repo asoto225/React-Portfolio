@@ -1,3 +1,5 @@
+import Footer from "../components/footer";
+
 export default function Projects() {
     return (
       <div>
@@ -17,6 +19,7 @@ export default function Projects() {
           bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
           est ligula suscipit velit, sed bibendum turpis dui in sapien.
         </p>
+        <Footer />
       </div>
     );
   }
