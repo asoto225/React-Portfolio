@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+body{
+  background-color: darkcyan;
+}
 
 .logo {
   height: 6em;
@@ -86,4 +89,7 @@ footer {
   padding: 2rem 0 0;
   /* background-color: #00840d; */
   color: black;
+}
+p {
+ font-size: 1.5em;
 }
