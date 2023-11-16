@@ -1,0 +1,188 @@
+@import 'animate.css';
+
+#root {
+  max-width: 100%;
+  /* margin: 5px; */
+  padding: 2rem 0;
+  text-align: center;
+}
+body{
+  background-color: darkcyan;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} 
+
+
+/* Navbar.css */
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #ddd;
+  color: green;
+  text-decoration: underline;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem 0 0;
+  background-color: #00840d;
+  color: #fff;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2rem 0 0;
+  /* background-color: #00840d; */
+  color: black;
+}
+p {
+ font-size: 1.5em;
+}
+
+.partyLinks {
+  float: inline-start
+}
+
+/* .eachProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  position: relative;
+}
+
+.eachProject h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:#02e618;
+  animation: zoomIn;
+  animation-duration: 1s;
+  border-bottom: solid 1px #02e618;
+} */
+
+.eachProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.eachProject h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #02e618;
+  animation: zoomIn;
+  animation-duration: 1s;
+  border-bottom: solid 1px #02e618;
+}
+
+.homeTitle {
+  text-align: start;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.subTitle {
+  text-align: start;
+  padding-left: 28px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+p {
+  text-align: start;
+  padding-left: 28px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-indent: 2%;
+}
+
+/* Reset the default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the list items as inline or as needed for your navigation */
+li {
+  display: inline-block;
+  margin-right: 15px; /* Adjust as needed */
+}
+
+/* Style the anchor tags inside the list items */
+li a {
+  text-decoration: none;
+  color: white; /* Adjust the color as needed */
+}
+

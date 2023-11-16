@@ -1,0 +1,35 @@
+/* CSS file for projects */
+@import 'animate.css';
+.imageContainer {
+position: relative;
+overflow: hidden;
+}
+.imageGif {
+    position: relative;
+    transition: transform 0.3s ease-out;
+    padding: 15px;
+    width: 300px;
+    height: 250px;
+}
+
+.imageContainer:hover .imageGif {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.imageIcon {
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    position: relative;
+    top: -267px;
+    left: 126px;
+    bottom: 30px;
+    opacity: 30%;
+    transition: opacity 0.3s ease-out;
+}
+
+.imageIcon:hover {
+    opacity: 100%;
+}
+

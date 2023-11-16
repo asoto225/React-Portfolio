@@ -1,19 +1,21 @@
 import Footer from "../components/footer";
 import Project from "../components/project";
+import Picture from '../assets/dadabase.png';
+import PinIt from '../assets/pinit.png';
 
 export default function Projects() {
         const projects = [
             {
                 title: "Dad-A-Base",
-                image: "https://via.placeholder.com/150",
+                image: Picture,
                 deployedLink: "https://rbracker.github.io/breakfastclub-project/",
                 githubLink: "https://github.com/rbracker/breakfastclub-project.git"
             },
             {
                 title: "Pin-It",
-                image: "https://via.placeholder.com/150",
+                image: PinIt,
                 deployedLink: "https://group6-pinit-ed814e5448cb.herokuapp.com",
-                githubLink: "https://github.com/westonkostura/Project2-PinIt.git"
+                githubLink: "https://www.github.com/westonkostura/Project2-PinIt.git",
             }
         ];
     return (

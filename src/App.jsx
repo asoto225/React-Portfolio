@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom';
 import PortfolioNav from './components/portfolioNav'
-import './App.css'
+import './css/App.css'
 
 function App() {
 
