@@ -5,7 +5,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; 2023 Abel's Portfolio. All rights reserved. Hire me! Made with React <FontAwesomeIcon icon={faReact}/></p>
+            <p>&copy; 2023 Abel's Portfolio. All rights reserved. Made with React <FontAwesomeIcon icon={faReact}/></p>
         </footer>
     );
 };

@@ -1,24 +1,36 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../components/footer";
+import '../css/resume.css';
+import { faFileAlt, faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
 export default function Resume() {
     return (
       <div>
-        <h1>Resume Page</h1>
-        <p>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
+        <div className="resume">View my <a href="https://docs.google.com/document/d/1rkdc0B8Obt0FfXiBDWAwaY-eOzwKmZpXgUzLqOBlzY4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="resumeLink">resume<FontAwesomeIcon icon={faFileAlt}/></a></div>
+        <h1 className="resumeTitle">Skills</h1>
+          <div className="skills">
+          <ul className="frontSkills">
+            <h2>Frontend</h2> <br />
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Handlebars</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Responsive Design</li>
+          </ul>
+          <ul className="backSkills">
+            <h2>Backend</h2> <br />
+            <li>APIs</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL, Sequlize</li>
+            <li>MongoDB, Mongoose</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+          </ul>
+          </div>
         <Footer />
       </div>
     );

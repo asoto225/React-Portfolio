@@ -39,17 +39,17 @@ function PortfolioNav() {
                         </li>
                     </ul>
                 </section>
-                <ul>
+                <ul className="navLinks">
                     <li>
                         <Link to='/' className={isActive('/')}>
                             Home
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to='/about' className={isActive('/about')}>
                             About
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to='/projects' className={isActive('/projects')}>
                             Projects

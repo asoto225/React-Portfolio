@@ -1,65 +1,31 @@
 @import 'animate.css';
 
 #root {
-  max-width: 100%;
-  /* margin: 5px; */
   padding: 2rem 0;
   text-align: center;
+  color: #fef0ff;
 }
+
 body{
-  background-color: darkcyan;
+  background-image: repeating-conic-gradient(from 101deg at 32% 24%, #2f297f 22%, #8789a6 75%);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-attachment: fixed;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} 
-
 
 /* Navbar.css */
 
 nav {
   background-color: #333;
   overflow: hidden;
+  flex:auto;
 }
 
 nav a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 15px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -71,60 +37,42 @@ nav a:hover {
 
 nav a.active {
   background-color: #ddd;
-  color: green;
+  color: rgb(251, 1, 1);
+  /* color: #fff; */
+  /* background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% ); */
   text-decoration: underline;
 }
 
 h1 {
   display: block;
   font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding: 14px;
   font-weight: bold;
 }
 header {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 1rem 0 0;
-  background-color: #00840d;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 1rem 0 0; */
+  /* background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% ); */
+  background-color: #333;
   color: #fff;
+justify-content: space-between;
+}
+.headerNav {
+  font-size: 2.5rem;
 }
 footer {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 2rem 0 0;
-  /* background-color: #00840d; */
-  color: black;
-}
-p {
- font-size: 1.5em;
+  color: #fff;
 }
 
 .partyLinks {
-  float: inline-start
+  float: inline-end
 }
-
-/* .eachProject {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  color: #fff;
-  position: relative;
-}
-
-.eachProject h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color:#02e618;
-  animation: zoomIn;
-  animation-duration: 1s;
-  border-bottom: solid 1px #02e618;
-} */
 
 .eachProject {
   display: flex;
@@ -137,16 +85,15 @@ p {
 .eachProject h3 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #02e618;
+  color: #fff;
   animation: zoomIn;
   animation-duration: 1s;
-  border-bottom: solid 1px #02e618;
+  border-bottom: solid 1px rgb(251, 1, 1);;
 }
 
 .homeTitle {
   text-align: start;
   padding-left: 28px;
-  margin-bottom: 10px;
   font-size: 50px;
 }
 
@@ -157,14 +104,19 @@ p {
   font-style: italic;
   font-size: 25px;
   text-decoration: underline;
+  animation: slideInLeft;
+  animation-duration: 1s;
+  color: #FFDC00;
 }
 
 p {
-  text-align: start;
   padding-left: 28px;
   margin-bottom: 20px;
   font-size: 30px;
   text-indent: 2%;
+  width: 90%;
+  justify-content: center;
+  line-height: 2;
 }
 
 /* Reset the default list styles */
@@ -177,7 +129,7 @@ ul {
 /* Style the list items as inline or as needed for your navigation */
 li {
   display: inline-block;
-  margin-right: 15px; /* Adjust as needed */
+  margin-right: 8px; /* Adjust as needed */
 }
 
 /* Style the anchor tags inside the list items */
@@ -186,3 +138,17 @@ li a {
   color: white; /* Adjust the color as needed */
 }
 
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    display: block; 
+  }
+}

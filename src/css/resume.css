@@ -1,0 +1,67 @@
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.skills li {
+    padding: 10px;
+    display: block;
+}
+
+.resumeTitle {
+    text-decoration: underline;
+}
+
+.frontSkills {
+    align-items: start;
+    color: #fff;
+    text-align: left;
+    flex-basis: min-content;
+}
+
+.frontSkills h2 {
+    text-decoration: underline;
+}
+
+.backSkills {
+    align-items: start;
+    color: #fff;
+    text-align: left;
+    flex-basis: min-content;
+}
+
+.backSkills h2 {
+    text-decoration: underline;
+}
+
+.resume{
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 45px;
+    text-align: center;
+}
+
+.resumeLink {
+    color: #FFDC00;
+    text-decoration: underline;
+}
+
+@media (max-width: 445px) {
+    .skills {
+        flex-direction: column;
+        align-items: start;
+    }
+    .skills li {
+        padding: 10px;
+        display: block;
+    }
+    .frontSkills {
+        margin-bottom: 20px;
+    }
+    .backSkills {
+        margin-bottom: 20px;
+    }
+    .resume {
+        padding: 0;
+    }
+}
