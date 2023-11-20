@@ -1,8 +1,25 @@
-# React + Vite
+# React-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+1. [Description](#description)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Screenshot](#screenshot)
+5. [Questions](#questions)
 
-Currently, two official plugins are available:
+## Description
+This project was aimed towards creating a personal portofolio to share my projects and growth for a future employer and/or other developers to colaborate on projects together using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage 
+To use this application, please visit the site listed at https://imaginative-shortbread-cadce8.netlify.app. Once there, the home page is an about me section introducing myself. You can click on any of the links in the navigation to view my projects, my contact information, or my resume. 
+
+## License 
+Please refer to the license in the GitHub Repository.
+
+## Screenshot 
+
+![Screenshot of homepage](homepage.png)
+
+## Questions 
+You can find me [HERE](https://github.com/asoto225) on Github.
+You can email me at abelsoto12@hotmail.com if you have any additional questions.
