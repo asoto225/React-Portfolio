@@ -8,7 +8,7 @@ export default function Contact() {
       <div>
         <h1>Contact Me!</h1>
         <p>
-        The easiest way to reach me is via email at abelsoto12@hotmail.com.
+        The easiest way to reach me is via email at absoto12@gmail.com.
         </p>
         <p>Below are links to my LinkedIn profile and my GitHub profile.</p> 
         <a href="https://www.linkedin.com/in/abelsoto225/" 
