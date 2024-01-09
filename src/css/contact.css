@@ -23,3 +23,23 @@
 .gitHubIcon:hover, .linkedInIcon:hover {
     opacity: 100%;
 }
+
+.contactForm {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #333;
+    box-shadow: 10px 10px 10px #000;
+    margin: 10px;
+}
+
+.form-item {
+    margin: 10px;
+    width: 300px;
+    font-size: 1.2rem;
+}

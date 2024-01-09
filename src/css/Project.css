@@ -27,6 +27,7 @@ overflow: hidden;
     bottom: 30px;
     opacity: 30%;
     transition: opacity 0.3s ease-out;
+    border: 1px solid red;
 }
 
 .imageIcon:hover {

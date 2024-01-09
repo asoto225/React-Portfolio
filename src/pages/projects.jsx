@@ -4,6 +4,7 @@ import Picture from '../assets/dadabase.png';
 import PinIt from '../assets/pinit.png';
 import JavascriptQuiz from '../assets/javascriptquiz.jpeg';
 import reactFitness from '../assets/reactFitness.png';
+import spendersense from '../assets/spendersense.png';
 
 export default function Projects() {
   const projects = [
@@ -12,6 +13,12 @@ export default function Projects() {
       image: reactFitness,
       deployedLink: "https://pure-atoll-27810-a712bf2f0891.herokuapp.com/",
       githubLink: "https://github.com/jishyk/React-Fitness.git",
+    },
+    {
+      title: "Spender Sense",
+      image: spendersense,
+      deployedLink: "https://spender-sense.onrender.com/",
+      githubLink: "https://github.com/asoto225/income-helper.git",
     },
     {
       title: "Pin-It",

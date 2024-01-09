@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/footer";
+import ContactUs from "../components/contactForm";
 import '../css/contact.css';
 
 export default function Contact() {
@@ -8,8 +9,9 @@ export default function Contact() {
       <div>
         <h1>Contact Me!</h1>
         <p>
-        The easiest way to reach me is via email at absoto12@gmail.com.
+        Please use the form below to send me a message! I will get back to you as soon as possible.
         </p>
+        < ContactUs />
         <p>Below are links to my LinkedIn profile and my GitHub profile.</p> 
         <a href="https://www.linkedin.com/in/abelsoto225/" 
         target="_blank" 
