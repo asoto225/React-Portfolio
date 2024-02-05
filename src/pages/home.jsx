@@ -1,9 +1,14 @@
 import Footer from "../components/footer";
+import Contact from "./contact";
+import Projects from "./projects";
+import Resume from "./resume";
 
 export default function Home() {
     return (
-        <div>
-            <h1 className="homeTitle">Hi,<br /> I'm Abel </h1>
+        <main>
+            <section id="home">
+            <h1 className="nameTitle">Hi, my name is</h1>
+            <h1 className="homeTitle">Abel Soto</h1>
             <h3 className="subTitle">Full Stack Developer</h3>
             {/* <p> I am passionate and dedicated full-stack developer who recently completed an 
                 intensive coding bootcamp. My journey into the world of coding began with a 
@@ -37,7 +42,17 @@ export default function Home() {
                 My toolbox includes React, MongoDB, and other cutting-edge technologies. I bring effective 
                 communication and project management skills, ready to contribute to a dynamic team.
             </p>
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
+            <section id="contact">
+                <Contact />
+            </section>
+            <section id="resume">
+                <Resume />
+            </section>
             <Footer />
-        </div>
+        </main>
     );
 };

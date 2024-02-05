@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../components/footer";
 import '../css/resume.css';
-import { faFileAlt, faFilePdf } from "@fortawesome/free-regular-svg-icons";
+import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 
 export default function Resume() {
     return (
@@ -31,7 +31,7 @@ export default function Resume() {
             <li>GraphQL</li>
           </ul>
           </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

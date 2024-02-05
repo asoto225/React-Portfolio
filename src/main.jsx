@@ -5,7 +5,6 @@ import App from './App.jsx'
 import './css/App.css'
 
 import Home from './pages/home'
-import About from './pages/about.jsx'
 import Projects from './pages/projects.jsx'
 import Contact from './pages/contact.jsx'
 import Resume from './pages/resume.jsx'

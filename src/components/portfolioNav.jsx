@@ -41,9 +41,10 @@ function PortfolioNav() {
                 </section>
                 <ul className="navLinks">
                     <li>
-                        <Link to='/' className={isActive('/')}>
+                        {/* <Link to='/' className={isActive('/')}>
                             Home
-                        </Link>
+                        </Link> */}
+                        <a href="#home">Home</a>
                     </li>
                     {/* <li>
                         <Link to='/about' className={isActive('/about')}>
@@ -51,19 +52,22 @@ function PortfolioNav() {
                         </Link>
                     </li> */}
                     <li>
-                        <Link to='/projects' className={isActive('/projects')}>
+                        {/* <Link to='/projects' className={isActive('/projects')}>
                             Projects
-                        </Link>
+                        </Link> */}
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <Link to='/contact' className={isActive('/contact')}>
+                        {/* <Link to='/contact' className={isActive('/contact')}>
                             Contact
-                        </Link>
+                        </Link> */}
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
-                        <Link to='/resume' className={isActive('/resume')}>
+                        {/* <Link to='/resume' className={isActive('/resume')}>
                             Resume
-                        </Link>
+                        </Link> */}
+                        <a href="#resume">Resume</a>
                     </li>
                 </ul>
             </nav>

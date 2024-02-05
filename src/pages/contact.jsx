@@ -23,7 +23,7 @@ export default function Contact() {
         rel="noopener noreferrer" 
         className="gitHubIcon"> <FontAwesomeIcon icon={faGithub}/>
         </a>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
