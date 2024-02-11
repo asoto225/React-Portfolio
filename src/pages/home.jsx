@@ -2,10 +2,18 @@ import Footer from "../components/footer";
 import Contact from "./contact";
 import Projects from "./projects";
 import Resume from "./resume";
+import { useEffect, useRef } from "react";
+import sr from "../utils/scrollReveal";
+import scrollConfig from "../utils/scrollConfig";
 
 export default function Home() {
+    const revealContainer = useRef(null);
+
+    useEffect(() => {
+      sr.reveal(revealContainer.current, scrollConfig());
+    }, []);
     return (
-        <main>
+        <main ref={revealContainer}>
             <section id="home">
             <h1 className="nameTitle">Hi, my name is</h1>
             <h1 className="homeTitle">Abel Soto</h1>

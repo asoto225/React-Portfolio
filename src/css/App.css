@@ -32,6 +32,11 @@ main {
   padding: 0px;
 }
 
+#projects {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
 /* Navbar.css */
 
 nav {
@@ -65,8 +70,8 @@ nav a.active {
 h1 {
   display: block;
   font-size: 2em;
-  padding: 14px;
-  font-weight: bold;
+  padding: 5px;
+  /* font-weight: bold; */
 }
 header {
   display: flex;
@@ -110,11 +115,16 @@ footer {
   animation-duration: 1s;
   border-bottom: solid 1px rgb(251, 1, 1);;
 }
-
+/* Mess with the font familys!! for the home and name title */
+.nameTitle{
+  font-family: 'Courier New', Courier, monospace;
+}
 .homeTitle {
   text-align: start;
   /* padding-left: 28px; */
   font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .subTitle {
@@ -125,7 +135,7 @@ footer {
   font-size: 25px;
   text-decoration: underline;
   animation: slideInLeft;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   /* color: #FFDC00; */
   color: #ff3333;
 }
@@ -135,9 +145,10 @@ p {
   margin-bottom: 20px;
   font-size: 30px;
   text-indent: 2%;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Reset the default list styles */
@@ -162,6 +173,11 @@ li a {
 .portfolio-container {
   display: flex;
   justify-content: space-around;
+}
+
+/* Ultility */
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
 @media (max-width: 992px) {

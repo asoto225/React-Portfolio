@@ -3,10 +3,18 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/footer";
 import ContactUs from "../components/contactForm";
 import '../css/contact.css';
+import { useEffect, useRef } from "react";
+import sr from "../utils/scrollReveal";
+import scrollConfig from "../utils/scrollConfig";
 
 export default function Contact() {
+  const revealContainer = useRef(null);
+
+  useEffect(() => {
+    sr.reveal(revealContainer.current, scrollConfig());
+  }, []);
     return (
-      <div>
+      <div ref={revealContainer}>
         <h1>Contact Me!</h1>
         <p>
         Please use the form below to send me a message! I will get back to you as soon as possible.

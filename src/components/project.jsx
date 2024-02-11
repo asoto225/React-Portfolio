@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../css/Project.css';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Project = ({image, title, deployedLink, githubLink}) => {
+const Project = ({image, title, deployedLink, githubLink, description}) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
         <div 
@@ -18,6 +18,7 @@ const Project = ({image, title, deployedLink, githubLink}) => {
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="imageIcon"><FontAwesomeIcon icon={faGithub}/></a>
             {/* </section> */}
             {/* <p>Deployed Application: <a href={deployedLink} target="_blank" rel="noopener noreferrer" >{deployedLink}</a></p> */}
+            <p>{description}</p>
         </div>
     );
 };
