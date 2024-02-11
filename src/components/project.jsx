@@ -14,11 +14,11 @@ const Project = ({image, title, deployedLink, githubLink, description}) => {
             <a href={deployedLink} target="_blank" rel="noopener noreferrer"><img src={image} alt={title} className={`imageGif ${isHovered ? 'hovered' : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}/></a>
+            <p>{description}</p>
             </section>
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="imageIcon"><FontAwesomeIcon icon={faGithub}/></a>
             {/* </section> */}
             {/* <p>Deployed Application: <a href={deployedLink} target="_blank" rel="noopener noreferrer" >{deployedLink}</a></p> */}
-            <p>{description}</p>
         </div>
     );
 };
