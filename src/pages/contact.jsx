@@ -6,11 +6,17 @@ import '../css/contact.css';
 import { useEffect, useRef } from "react";
 import sr from "../utils/scrollReveal";
 import scrollConfig from "../utils/scrollConfig";
+import usePrefersReducedMotion from "../utils/usePrefersReducedMotion";
 
 export default function Contact() {
   const revealContainer = useRef(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
+      if (prefersReducedMotion) {
+          return;
+      }
+
     sr.reveal(revealContainer.current, scrollConfig());
   }, []);
     return (

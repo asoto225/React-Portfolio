@@ -8,9 +8,9 @@ function App() {
   return (
     <div>
       <PortfolioNav />
-      <main className="mx-3">
+      <div>
         <Outlet />
-      </main>
+      </div>
     </div>
   );
 };

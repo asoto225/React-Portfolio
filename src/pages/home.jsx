@@ -2,18 +2,10 @@ import Footer from "../components/footer";
 import Contact from "./contact";
 import Projects from "./projects";
 import Resume from "./resume";
-import { useEffect, useRef } from "react";
-import sr from "../utils/scrollReveal";
-import scrollConfig from "../utils/scrollConfig";
 
 export default function Home() {
-    const revealContainer = useRef(null);
-
-    useEffect(() => {
-      sr.reveal(revealContainer.current, scrollConfig());
-    }, []);
     return (
-        <main ref={revealContainer}>
+        <main>
             <section id="home">
             <h1 className="nameTitle">Hi, my name is</h1>
             <h1 className="homeTitle">Abel Soto</h1>
@@ -51,12 +43,15 @@ export default function Home() {
                 communication and project management skills, ready to contribute to a dynamic team.
             </p>
             </section>
+            <br />
             <section id="projects">
                 <Projects />
             </section>
+            <br />
             <section id="contact">
                 <Contact />
             </section>
+            <br />
             <section id="resume">
                 <Resume />
             </section>

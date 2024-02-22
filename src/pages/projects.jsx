@@ -1,18 +1,21 @@
-import Footer from "../components/footer";
 import Project from "../components/project";
-import Picture from '../assets/dadabase.png';
 import PinIt from '../assets/pinit.png';
-import JavascriptQuiz from '../assets/javascriptquiz.jpeg';
 import reactFitness from '../assets/reactFitness.png';
 import spendersense from '../assets/spendersense.png';
 import { useEffect, useRef } from "react";
 import sr from "../utils/scrollReveal";
 import scrollConfig from "../utils/scrollConfig";
+import usePrefersReducedMotion from "../utils/usePrefersReducedMotion";
 
 export default function Projects() {
   const revealContainer = useRef(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
+      if (prefersReducedMotion) {
+          return;
+      }
+
     sr.reveal(revealContainer.current, scrollConfig());
   }, []);
 
@@ -45,13 +48,13 @@ export default function Projects() {
     //   githubLink: "https://github.com/asoto225/javascript-quiz.git",
     //   description: "this is a project description example"
     // },
-    {
-      title: "Dad-A-Base",
-      image: Picture,
-      deployedLink: "https://rbracker.github.io/breakfastclub-project/",
-      githubLink: "https://github.com/rbracker/breakfastclub-project.git",
-      description: "this is a project description example"
-    },
+    // {
+    //   title: "Dad-A-Base",
+    //   image: Picture,
+    //   deployedLink: "https://rbracker.github.io/breakfastclub-project/",
+    //   githubLink: "https://github.com/rbracker/breakfastclub-project.git",
+    //   description: "this is a project description example"
+    // },
   ];
 
   const chunkProjects = (array, size) => {

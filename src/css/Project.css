@@ -34,3 +34,14 @@ overflow: hidden;
     opacity: 100%;
 }
 
+@media (max-width: 445px) {
+    .imageGif {
+        width: 200px;
+        height: 150px;
+    }
+    .imageIcon {
+        font-size: 30px;
+        top: -167px;
+        left: 76px;
+    }
+}
