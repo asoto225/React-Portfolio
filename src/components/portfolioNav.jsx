@@ -1,22 +1,22 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import Header from "./header";
 import "../css/App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons";
 
-const isActive = (path) => {
-    const currentPage = useLocation().pathname;
-    return currentPage === path ? 'nav-link active' : 'nav-link';
-};
-const linkedIcons = {
+// const isActive = (path) => {
+//     const currentPage = useLocation().pathname;
+//     return currentPage === path ? 'nav-link active' : 'nav-link';
+// };
+// const linkedIcons = {
 
-}
+// }
 
 function PortfolioNav() {
     return (
         <Header>
-            <nav>
+            <nav className="fixed-nav">
                 <section>
                     <ul className="partyLinks">
                         <li>

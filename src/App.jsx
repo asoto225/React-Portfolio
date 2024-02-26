@@ -6,11 +6,11 @@ import './css/App.css'
 function App() {
 
   return (
-    <div>
-      <PortfolioNav />
-      <div>
+    <div className='main-page'>
+      {/* <PortfolioNav /> */}
+      {/* <div> */}
         <Outlet />
-      </div>
+      {/* </div> */}
     </div>
   );
 };

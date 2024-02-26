@@ -21,7 +21,7 @@ export default function Contact() {
   }, []);
     return (
       <div ref={revealContainer}>
-        <h1>Contact Me!</h1>
+        {/* <h1>Contact Me!</h1> */}
         <p>
         Please use the form below to send me a message! I will get back to you as soon as possible.
         </p>

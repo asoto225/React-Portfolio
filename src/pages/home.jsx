@@ -2,10 +2,12 @@ import Footer from "../components/footer";
 import Contact from "./contact";
 import Projects from "./projects";
 import Resume from "./resume";
+import PortfolioNav from "../components/portfolioNav";
 
 export default function Home() {
     return (
         <main>
+            <PortfolioNav />
             <section id="home">
             <h1 className="nameTitle">Hi, my name is</h1>
             <h1 className="homeTitle">Abel Soto</h1>
@@ -45,14 +47,17 @@ export default function Home() {
             </section>
             <br />
             <section id="projects">
+                <h1>Projects</h1>
                 <Projects />
             </section>
             <br />
             <section id="contact">
+                <h1>Contact Me!</h1>
                 <Contact />
             </section>
             <br />
             <section id="resume">
+                <h1>Resume</h1>
                 <Resume />
             </section>
             <Footer />

@@ -25,36 +25,25 @@ export default function Projects() {
       image: reactFitness,
       deployedLink: "https://pure-atoll-27810-a712bf2f0891.herokuapp.com/",
       githubLink: "https://github.com/jishyk/React-Fitness.git",
-      description: "this is a project description example"
+      description: "A fitness app that allows users to track their workouts and meals.",
+      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
     },
     {
       title: "Spender Sense",
       image: spendersense,
       deployedLink: "https://spender-sense.onrender.com/",
       githubLink: "https://github.com/asoto225/income-helper.git",
-      description: "this is a project description example"
+      description: "A budgeting app that helps users track their income and expenses.",
+      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
     },
     {
       title: "Pin-It",
       image: PinIt,
       deployedLink: "https://group6-pinit-ed814e5448cb.herokuapp.com",
       githubLink: "https://www.github.com/westonkostura/Project2-PinIt.git",
-      description: "this is a project description example"
-    },
-    // {
-    //   title: "Javascript Quiz",
-    //   image: JavascriptQuiz,
-    //   deployedLink: "https://asoto225.github.io/javascript-quiz/",
-    //   githubLink: "https://github.com/asoto225/javascript-quiz.git",
-    //   description: "this is a project description example"
-    // },
-    // {
-    //   title: "Dad-A-Base",
-    //   image: Picture,
-    //   deployedLink: "https://rbracker.github.io/breakfastclub-project/",
-    //   githubLink: "https://github.com/rbracker/breakfastclub-project.git",
-    //   description: "this is a project description example"
-    // },
+      description: "A social media app that allows users to share their favorite locations.",
+      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
+    }
   ];
 
   const chunkProjects = (array, size) => {
@@ -68,7 +57,7 @@ export default function Projects() {
   // add a description to each project
   return (
     <div ref={revealContainer}>
-      <h1>Projects</h1>
+      {/* <h1>Projects</h1> */}
       {projectsInRows.map((row, rowIndex) =>(
       <div key={rowIndex} className="portfolio-container">
         {row.map((project, index) => (
@@ -79,11 +68,11 @@ export default function Projects() {
             deployedLink={project.deployedLink}
             githubLink={project.githubLink}
             description={project.description}
+            tech={project.tech}
           />
         ))}
       </div>
       ))}
-      {/* <Footer /> */}
     </div>
   );
 };
