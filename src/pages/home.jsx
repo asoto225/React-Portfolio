@@ -9,10 +9,10 @@ export default function Home() {
         <main>
             <PortfolioNav />
             <section id="home">
-            <h1 className="nameTitle">Hi, my name is</h1>
-            <h1 className="homeTitle">Abel Soto</h1>
-            <h3 className="subTitle">Full Stack Developer</h3>
-            {/* <p> I am passionate and dedicated full-stack developer who recently completed an 
+                <h1 className="nameTitle">Hi, my name is</h1>
+                <h1 className="homeTitle">Abel Soto</h1>
+                <h3 className="subTitle">Full Stack Developer (React | MERN | SQL)</h3>
+                {/* <p> I am passionate and dedicated full-stack developer who recently completed an 
                 intensive coding bootcamp. My journey into the world of coding began with a 
                 thirst for knowledge and a drive to turn ideas into functional, user-friendly 
                 applications. </p>
@@ -35,29 +35,35 @@ export default function Home() {
                 project management. I understand the importance of collaboration in achieving 
                 successful outcomes,and I'm ready to contribute my skills to a dynamic and innovative 
                 team.</p> */}
-            <p>
+                <p>
 
-                I'm a dedicated full-stack developer with a passion for turning ideas into user-friendly 
-                applications. I recently completed an intensive coding bootcamp, gaining proficiency in 
-                front-end (HTML, CSS, JavaScript) and back-end (Node.js, Express) development. I excel in 
-                writing clean, maintainable code and thrive in collaborative, problem-solving environments. 
-                My toolbox includes React, MongoDB, and other cutting-edge technologies. I bring effective 
-                communication and project management skills, ready to contribute to a dynamic team.
-            </p>
+                    {/* I'm a dedicated full-stack developer with a passion for turning ideas into user-friendly
+                    applications. I recently completed an intensive coding bootcamp, gaining proficiency in
+                    front-end (HTML, CSS, JavaScript) and back-end (Node.js, Express) development. I excel in
+                    writing clean, maintainable code and thrive in collaborative, problem-solving environments.
+                    My toolbox includes React, MongoDB, and other cutting-edge technologies. I bring effective
+                    communication and project management skills, ready to contribute to a dynamic team. */}
+                    As a dedicated full-stack developer with expertise in React, JavaScript, SQL, NoSQL, and building applications with the MERN Stack,
+                    I'm passionate in transforming concepts into user-centric solutions. My enthusiasm lies in crafting intuitive applications that enhance user experience.
+                    I recently completed an intensive coding bootcamp, honing my skills in both front-end (HTML, CSS, JavaScript) and back-end (Node.js, Express) development.
+                    I aim for clean, maintainable code and excel in collaborative problem-solving. As a proactive team player committed to delivering top-tier work, I'm eager 
+                    to join an innovative team.
+
+                </p>
             </section>
             <br />
             <section id="projects">
-                <h1>Projects</h1>
+                {/* <h1>Projects</h1> */}
                 <Projects />
             </section>
             <br />
             <section id="contact">
-                <h1>Contact Me!</h1>
+                {/* <h1>Contact Me!</h1> */}
                 <Contact />
             </section>
             <br />
             <section id="resume">
-                <h1>Resume</h1>
+                {/* <h1>Resume</h1> */}
                 <Resume />
             </section>
             <Footer />

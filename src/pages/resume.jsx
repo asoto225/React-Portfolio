@@ -5,6 +5,7 @@ import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useRef } from "react";
 import sr from "../utils/scrollReveal";
 import scrollConfig from "../utils/scrollConfig";
+import AbelsResume from "../assets/AbelsResume.pdf"
 
 export default function Resume() {
   const revealContainer = useRef(null);
@@ -29,7 +30,7 @@ export default function Resume() {
 
   return (
     <div ref={revealContainer}>
-      <div className="resume">View my <a href="https://docs.google.com/document/d/1rkdc0B8Obt0FfXiBDWAwaY-eOzwKmZpXgUzLqOBlzY4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="resumeLink">resume<FontAwesomeIcon icon={faFileAlt} /></a></div>
+      <div className="resume">View my <a href={AbelsResume} target="_blank" rel="noopener noreferrer" className="resumeLink">resume<FontAwesomeIcon icon={faFileAlt} /></a></div>
       <h1 className="resumeTitle">Skills</h1>
       <div className="skills">
         <ul className="frontSkills">

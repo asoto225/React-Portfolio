@@ -211,7 +211,7 @@ html {
     margin-top: 10px;
   } */
   main {
-    padding: 0px;
+    padding: 0px 10px;
   }
   .portfolio-container {
     flex-direction: column;

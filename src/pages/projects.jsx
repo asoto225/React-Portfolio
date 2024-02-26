@@ -25,24 +25,24 @@ export default function Projects() {
       image: reactFitness,
       deployedLink: "https://pure-atoll-27810-a712bf2f0891.herokuapp.com/",
       githubLink: "https://github.com/jishyk/React-Fitness.git",
-      description: "A fitness app that allows users to track their workouts and meals.",
-      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
+      description: "A fitness application for tracking workouts and meals.",
+      tech: "React, Node.js, Express, MongoDB, Mongoose, GraphQL, Javascript, HTML, CSS, Heroku"
     },
     {
       title: "Spender Sense",
       image: spendersense,
       deployedLink: "https://spender-sense.onrender.com/",
       githubLink: "https://github.com/asoto225/income-helper.git",
-      description: "A budgeting app that helps users track their income and expenses.",
-      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
+      description: "A budgeting application for income and expense tracking.",
+      tech: "React, Node.js, Express, MongoDB, Mongoose, GraphQL, Javascript, HTML, CSS, Render"
     },
     {
       title: "Pin-It",
       image: PinIt,
       deployedLink: "https://group6-pinit-ed814e5448cb.herokuapp.com",
       githubLink: "https://www.github.com/westonkostura/Project2-PinIt.git",
-      description: "A social media app that allows users to share their favorite locations.",
-      tech: "React, Node.js, Express, MongoDB, Mongoose, Heroku"
+      description: "A social media platform for sharing favorite locations.",
+      tech: "Javascript, HTML, CSS Node.js, Express, MySQL, Sequelize, Handlebars, Heroku"
     }
   ];
 
@@ -57,7 +57,7 @@ export default function Projects() {
   // add a description to each project
   return (
     <div ref={revealContainer}>
-      {/* <h1>Projects</h1> */}
+      <h1>Projects</h1>
       {projectsInRows.map((row, rowIndex) =>(
       <div key={rowIndex} className="portfolio-container">
         {row.map((project, index) => (
