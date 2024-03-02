@@ -6,7 +6,7 @@ import './css/App.css'
 function App() {
 
   return (
-    <div className='main-page'>
+    <div>
       {/* <PortfolioNav /> */}
       {/* <div> */}
         <Outlet />
